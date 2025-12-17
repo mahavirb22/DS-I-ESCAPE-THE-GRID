@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Escape The Grid</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <h1>Escape The Grid</h1>
+  <div class="controls">
+    <button id="genBtn">Generate Maze</button>
+    <button id="startBtn" class="primary">Start</button>
+    <button id="stopBtn">Stop</button>
+    <button id="resumeBtn" style="display:none;">Resume</button>
+  </div>
+</header>
+
+<main>
+  <div class="grid">
+    <!-- BFS -->
+    <div class="card" id="card-bfs">
+      <h3>BFS <span class="badge" id="badge-bfs"></span></h3>
+      <canvas id="canvas-bfs" width="420" height="300"></canvas>
+      <div class="stats">
+        <div>Time (ms): <span id="time-bfs">-</span></div>
+        <div>Visited: <span id="visited-bfs">-</span></div>
+        <div>Path Len: <span id="path-bfs">-</span></div>
+      </div>
+    </div>
+
+    <!-- A* -->
+    <div class="card" id="card-astar">
+      <h3>A* <span class="badge" id="badge-astar"></span></h3>
+      <canvas id="canvas-astar" width="420" height="300"></canvas>
+      <div class="stats">
+        <div>Time (ms): <span id="time-astar">-</span></div>
+        <div>Visited: <span id="visited-astar">-</span></div>
+        <div>Path Len: <span id="path-astar">-</span></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<section class="logpanel">
+  <div class="log-header">
+    <h3>Run Log</h3>
+    <div class="log-actions">
+      <button id="clearLogBtn">Clear</button>
+    </div>
+  </div>
+  <div id="log" class="log-body" aria-live="polite"></div>
+  <div class="log-footer" id="winner"></div>
+  
+</section>
+
+<div id="notify"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
