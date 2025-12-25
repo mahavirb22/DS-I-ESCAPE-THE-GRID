@@ -1,0 +1,7 @@
+PowerShell commands to build and run:
+
+cd "d:\VIT\3-SEM\DS-I\DS_CP_FINAL\EscapeTheGrid"
+g++ server.cpp -o server.exe -lws2_32
+./server.exe
+
+Then open http://localhost:8081/ in your browser.
