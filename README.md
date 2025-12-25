@@ -13,11 +13,8 @@ A lightweight C++ web server that serves a visual comparison of BFS and A* pathf
 ## Build & Run (Windows PowerShell)
 ```powershell
 <<<<<<< HEAD
-cd "d:\VIT\3-SEM\DS-I\DS_CP_FINAL\EscapeTheGrid"
-=======
 cd "D:\EscapeTheGrid"
->>>>>>> 469ce398b040d0e09beaef059fff1e8cc6ca8358
-g++ server.cpp -o server.exe -lws2_32
+>>>>>>> g++ server.cpp -o server.exe -lws2_32
 ./server.exe
 ```
 Open `http://localhost:8081/` in your browser.
